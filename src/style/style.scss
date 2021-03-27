@@ -1,6 +1,22 @@
 // Custom CSS in this bitch
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
 #site-border {
   border: 14px solid $primary;
-  // width: calc(100%);
-  // height: calc(100%);
+  min-height: 100vh;
+}
+
+// magic sauce to center content on X and Y axis
+#center-content {
+  position: absolute;
+  top: 50%;
+  // width: 100%;
+  transform: translateY(-50%);
+}
+
+.hero-name {
+  font-style: italic;
+  line-height: 0.65;
 }

@@ -7,3 +7,54 @@ $grey: #a1a1a1; // grey
 
 $primary: $black;
 $secondary: $grey;
+
+// SPACING
+$spacer: 1rem; // 16px
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0px,
+    1: 4px,
+    2: 8px,
+    3: 12px,
+    4: 16px,
+    5: 24px,
+    6: 32px,
+    7: 48px,
+    8: 64px,
+    9: 128px,
+  ),
+  $spacers
+);
+
+// FONTS
+
+$font-family-sans-serif: "SF Pro Display", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: "SF Pro Display", serif;
+$font-family-brand: "SF Pro Display", sans-serif;
+
+$enable-responsive-font-sizes: true;
+
+$input-btn-font-family: $font-family-sans-serif;
+$btn-font-family: $input-btn-font-family;
+$input-font-family: $input-btn-font-family;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-size-base: 0.875rem;
+$line-height-base: 1.5;
+
+$h1-font-size: 96px;
+$h2-font-size: 36px;
+$h3-font-size: 24px;
+
+$headings-font-family: $font-family-brand;
+$headings-font-weight: 700;
+
+$lead-font-size: 20px;
+$lead-font-weight: 400;
+
+$lead-font-size: $font-size-base * 1.25;
+$lead-font-weight: $font-weight-normal;
