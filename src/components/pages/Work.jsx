@@ -1,14 +1,15 @@
 import React from "react";
 import HeroName from "../ui/HeroName";
+import ProjectShowcase from "../ui/ProjectShowcase";
 
 function Work() {
   return (
-    <div id="center-content" className="row">
+    <div className="row align-items-center vh-100">
       <div className="col-6">
         <HeroName />
       </div>
       <div className="col-6">
-        <h1>work component</h1>
+        <ProjectShowcase />
       </div>
     </div>
   );

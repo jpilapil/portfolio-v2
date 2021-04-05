@@ -1,11 +1,24 @@
 // Custom CSS in this bitch
 
-body {
+body,
+html {
   font-family: "SF Pro Display", sans-serif;
+
+  // overflow: hidden;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 #site-border {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  width: calc(100%);
+  height: calc(100%);
   border: 14px solid $primary;
-  min-height: 100vh;
 }
 
 // magic sauce to center content on X and Y axis
@@ -16,7 +29,45 @@ body {
   transform: translateY(-50%);
 }
 
+#view-project {
+  z-index: 2;
+  position: absolute;
+  bottom: 14px;
+
+  // styling
+  background-color: $primary;
+  color: $background;
+  width: 200px;
+  height: 75px;
+  font-weight: lighter;
+  box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+  outline: none;
+}
+
+// work page image shit
+#image-temp {
+  width: 325px;
+  height: 400px;
+  background-color: $secondary;
+}
+
+// line between NXT and BCK buttons
+#project-line {
+  border-left: 1px solid $black;
+  height: 36px;
+}
+
 .hero-name {
   font-style: italic;
   line-height: 0.65;
+}
+
+.page-title {
+  font-style: italic;
+  line-height: 0.65;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: light;
 }

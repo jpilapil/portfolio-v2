@@ -1,11 +1,11 @@
 import React from "react";
-import { work } from "../../data/editableData";
+import { name } from "../../data/editableData";
 
 function HeroName() {
   return (
     <>
-      <h1 className="hero-name">{work.firstName}</h1>
-      <h1 className="hero-name">{work.lastName}</h1>
+      <h1 className="hero-name">{name.firstName}</h1>
+      <h1 className="hero-name">{name.lastName}</h1>
     </>
   );
 }

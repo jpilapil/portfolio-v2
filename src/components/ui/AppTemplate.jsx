@@ -6,7 +6,7 @@ import Nav from "./Nav";
 export default function AppTemplate(props) {
   return (
     <div id="site-border">
-      <Nav />
+      {/* <Nav /> */}
       <div className="container">
         {/* displays everything passed into AppTemplate component */}
         {props.children}
