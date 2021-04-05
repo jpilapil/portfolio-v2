@@ -31,13 +31,6 @@ const work = [
       "A lightweight system tray application built with Electron.js to remind you to drink water.",
     link: "https://github.com/jpilapil/stay-hydrated",
   },
-  {
-    id: 4,
-    name: "Function Library",
-    desc:
-      "A single page function library designed for personal use to assist in continued learning for future programming languages.",
-    link: "https://github.com/jpilapil/react-utility-library",
-  },
 ];
 
 export { name, test, work };

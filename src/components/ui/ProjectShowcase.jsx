@@ -16,7 +16,7 @@ function ProjectShowcase() {
   return (
     <>
       <div className="row">
-        <h2 className="page-title">WORK</h2>
+        <h2 className="page-title pl-3">WORK</h2>
       </div>
 
       <div className="row">
