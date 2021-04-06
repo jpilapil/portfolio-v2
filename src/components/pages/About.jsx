@@ -1,10 +1,11 @@
 import React from "react";
 import AppTemplate from "../ui/AppTemplate";
+import Bio from "../ui/Bio";
 
 function About() {
   return (
     <AppTemplate>
-      <h1>about page</h1>
+      <Bio />
     </AppTemplate>
   );
 }
