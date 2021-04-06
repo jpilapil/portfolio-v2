@@ -57,6 +57,25 @@ html {
   height: 36px;
 }
 
+.nav-90 {
+  display: block;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  position: fixed;
+  left: 100%;
+  padding-left: 20px;
+  width: 100vh;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .hero-name {
   font-style: italic;
   line-height: 0.65;
@@ -70,4 +89,17 @@ html {
 .project-title {
   font-size: 24px;
   font-weight: light;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: $black;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 1.5rem;
+}
+
+.nav-link:hover {
+  font-weight: bold italic;
+  color: $grey;
 }
