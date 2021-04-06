@@ -18,7 +18,7 @@ html {
   top: 0;
   width: calc(100%);
   height: calc(100%);
-  border: 14px solid $primary;
+  border: 16px solid $primary;
 }
 
 // magic sauce to center content on X and Y axis
@@ -94,12 +94,18 @@ html {
 .nav-link {
   font-weight: bold;
   color: $black;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 1.5rem;
+  outline: none;
 }
 
 .nav-link:hover {
-  font-weight: bold italic;
   color: $grey;
+}
+
+.nav-active {
+  border-bottom: 1px solid $black;
+  height: 15px;
+  padding-bottom: 1.5rem;
 }

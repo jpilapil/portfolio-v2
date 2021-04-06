@@ -2,24 +2,51 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Navigation() {
+  // get current page path name
+  const url = window.location.pathname;
+
+  // if the current pathname = /, return className 'nav-active'
+  function navActiveOnWork(url) {
+    if (url.indexOf("about") < 0 && url.indexOf("contact") < 0) {
+      return "nav-active";
+    } else return "";
+  }
+
+  // if the current pathname = /about, return className 'nav-active'
+  function navActiveOnAbout(url) {
+    if (url.indexOf("about") > 0) {
+      return "nav-active";
+    } else return "";
+  }
+
+  // if the current pathname = /contact, return className 'nav-active'
+  function navActiveOnContact(url) {
+    if (url.indexOf("contact") > 0) {
+      return "nav-active";
+    } else return "";
+  }
+
   return (
-    <nav class="navbar navbar-expand-lg nav-90">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <Link class="nav-link" to="/">
+    <nav className="navbar navbar-expand-lg nav-90">
+      <div className="container-fluid">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ">
+            <li className="nav-item">
+              <Link to="/" className={`nav-link ${navActiveOnWork(url)}`}>
                 WORK
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/about">
+            <li className="nav-item">
+              <Link to="/about" className={`nav-link ${navActiveOnAbout(url)}`}>
                 ABOUT
               </Link>
             </li>
 
-            <li class="nav-item">
-              <Link class="nav-link" to="/contact">
+            <li className="nav-item">
+              <Link
+                to="/contact"
+                className={`nav-link ${navActiveOnContact(url)}`}
+              >
                 CONTACT
               </Link>
             </li>

@@ -32,7 +32,7 @@ function ProjectShowcase() {
       <div className="row justify-content-center">
         <a
           id="view-project"
-          class="btn pt-5"
+          className="btn pt-5"
           href={work[activeStep].link}
           target="_blank"
           rel="noreferrer"
@@ -42,7 +42,7 @@ function ProjectShowcase() {
       </div>
       <div className="row float-right">
         <button
-          class="btn"
+          className="btn"
           target="_blank"
           rel="noreferrer"
           onClick={handleBack}
@@ -52,7 +52,7 @@ function ProjectShowcase() {
         </button>
         <span id="project-line"></span>
         <button
-          class="btn"
+          className="btn"
           target="_blank"
           rel="noreferrer"
           onClick={handleNext}
