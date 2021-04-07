@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   aboutBio1,
   aboutBio2,
-  aboutBio3,
+  resumeLink,
   experience,
 } from "../../data/editableData";
 
@@ -14,7 +15,22 @@ function Bio() {
           <h2 className="page-title pb-7">ABOUT</h2>
           <p>{aboutBio1}</p>
           <p>{aboutBio2}</p>
-          <p>{aboutBio3}</p>
+          <p>
+            Peep my{" "}
+            <a
+              href={resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="clickable"
+            >
+              resume
+            </a>{" "}
+            or{" "}
+            <Link className="clickable" to="/contact">
+              contact me here
+            </Link>{" "}
+            if you would like to learn more about me.
+          </p>
           <h2 className="page-title py-7">EXPERIENCE</h2>
           <table className="table table-borderless">
             <tbody>

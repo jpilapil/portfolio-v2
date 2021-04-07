@@ -113,3 +113,13 @@ html {
 .experience-company {
   font-weight: bold;
 }
+
+.clickable {
+  color: $grey;
+  text-decoration: underline;
+}
+
+.clickable:hover {
+  color: $black;
+  text-decoration: none;
+}
