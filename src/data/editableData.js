@@ -1,6 +1,6 @@
 import { v4 as getUuid } from "uuid"; // generates a UUID
 
-// first and last name on the work page
+// first and last name on the work page, firstName also used on contact
 const name = {
   firstName: "JUSTIN",
   lastName: "PILAPIL",
@@ -14,7 +14,7 @@ const test = {
 // this is the data for your projects that show up on the work page
 const work = [
   {
-    id: getUuid(),
+    id: getUuid(), // generates uuid
     name: "Key : Value Pairs",
     desc: "A platform that matches users based on technological interests.",
     link: "https://keyvaluepairs.herokuapp.com",
