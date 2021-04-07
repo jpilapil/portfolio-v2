@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { work } from "../../data/editableData";
 
 function ProjectShowcase() {
@@ -13,6 +12,7 @@ function ProjectShowcase() {
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
+
   return (
     <>
       <div className="row">
@@ -42,7 +42,7 @@ function ProjectShowcase() {
       </div>
       <div className="row float-right">
         <button
-          className="btn"
+          className="btn backNextButton"
           target="_blank"
           rel="noreferrer"
           onClick={handleBack}
@@ -52,7 +52,7 @@ function ProjectShowcase() {
         </button>
         <span id="project-line"></span>
         <button
-          className="btn"
+          className="btn backNextButton"
           target="_blank"
           rel="noreferrer"
           onClick={handleNext}
@@ -61,26 +61,6 @@ function ProjectShowcase() {
           NXT
         </button>
       </div>
-      {/* <div className="row">
-        <button
-          class="btn pt-5"
-          target="_blank"
-          rel="noreferrer"
-          onClick={handleBack}
-          disabled={activeStep === 0}
-        >
-          BCK
-        </button>
-        <button
-          class="btn pt-5"
-          target="_blank"
-          rel="noreferrer"
-          onClick={handleNext}
-          disabled={activeStep === maxSteps - 1}
-        >
-          NXT
-        </button>
-      </div> */}
     </>
   );
 }
