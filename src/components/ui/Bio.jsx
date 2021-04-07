@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   aboutBio1,
   aboutBio2,
-  resumeLink,
+  githubLink,
   experience,
 } from "../../data/editableData";
 
@@ -18,14 +18,14 @@ function Bio() {
           <p>
             Peep my{" "}
             <a
-              href={resumeLink}
+              href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
               className="clickable"
             >
-              resume
+              GitHub
             </a>{" "}
-            or{" "}
+            to check out the different projects I might be working on, or{" "}
             <Link className="clickable" to="/contact">
               contact me here
             </Link>{" "}
