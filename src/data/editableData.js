@@ -1,9 +1,10 @@
 import { v4 as getUuid } from "uuid"; // generates a UUID
 
-// first and last name on the work page, firstName also used on contact
+// first and last name on the work page, firstName and email also used on contact
 const name = {
   firstName: "JUSTIN",
   lastName: "PILAPIL",
+  email: "justin.pilapil@yahoo.com",
 };
 
 const test = {

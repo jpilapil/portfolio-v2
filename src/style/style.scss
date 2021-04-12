@@ -127,3 +127,30 @@ html {
 .backNextButton:hover {
   color: $grey;
 }
+
+.form-text {
+  font-size: 24px;
+  padding-top: 48px;
+}
+
+.contact-inline-input {
+  border: 0;
+  font-family: $font-family-sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 52px;
+  color: $grey;
+  display: inline;
+  word-wrap: break-word;
+  padding: 0;
+  display: inline;
+  box-sizing: content-box;
+  min-width: 16px;
+  text-shadow: none;
+  outline: none;
+}
+
+.contact-inline-input-who {
+  width: 139px;
+}
